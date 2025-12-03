@@ -1,3 +1,22 @@
+"""
+Secure Stroke Patient Management System
+=======================================
+
+This Flask application is developed for COM7033 Secure Software Development (Assessment 1).
+It allows secure storage, management, CRUD operations, and retrieval of patient data
+related to stroke prediction.
+
+The application demonstrates:
+- Secure coding practices
+- Use of two databases (SQLite for authentication, MongoDB for patients)
+- Input validation, password hashing, CSRF protection
+- Professional logging, sessions, and structured routing
+- Ethical handling of health-related data
+
+Use of Generative AI
+This assignment used generative AI for explanation purposes.
+"""
+
 from flask import Flask, render_template, request, redirect, session, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
@@ -269,4 +288,5 @@ def delete_patient(patient_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
